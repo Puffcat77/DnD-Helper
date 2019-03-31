@@ -8,13 +8,13 @@ namespace DnDHelperApp
 {
     internal class Skill
     {
-        internal int Level { get; set; }
-        internal Damage Damage { get; set; }
-        internal StringBuilder Description { get; set; }
-        internal int CreationLimit { get; set; }
-        internal string SkillType { get; set; }
-        internal Stat InfluencingParameter { get; set; }
-        internal int BaseSkillValue
+        internal int Level { get; set; } // Уровень скилла
+        internal Damage Damage { get; set; } // Урон навыка, если он принадлежит к боевым
+        internal StringBuilder Description { get; set; } // Его описание
+        internal int CreationLimit { get; set; } // Предел уровня этого навыка при создании персонажа
+        internal string SkillType { get; set; } // Тип навыка (карьерный, жизненный или из школы фехтования)
+        internal Stat InfluencingParameter { get; set; } // Параметр, от которого зависит навык
+        internal int BaseSkillValue // Базовое значение навыка без броска кубика
         {
             get
             {
@@ -43,12 +43,12 @@ namespace DnDHelperApp
             InfluencingParameter = stat;
         }
 
-        public void LevelUp()
+        public void LevelUp() // Поднятие уровня навыка
         {
             Level++;
         }
 
-        public int UseSkill(int diceValue)
+        public int UseSkill(int diceValue) // Подсчет значения навыка с броском кубика при использовании самого навыка
         {
             return BaseSkillValue + diceValue;
         }

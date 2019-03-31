@@ -71,6 +71,12 @@
     </ApplicationDefinition>
     <Compile Include="Currency.cs" />
     <Compile Include="Damage.cs" />
+    <Compile Include="DamagingItem.cs" />
+    <Compile Include="HealingItem.cs" />
+    <Compile Include="IItemType.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="MagicalItem.cs" />
+    <Compile Include="Item.cs" />
     <Compile Include="Magic.cs" />
     <Compile Include="MagicSchool.cs" />
     <Compile Include="Skill.cs" />

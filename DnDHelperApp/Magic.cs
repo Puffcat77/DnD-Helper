@@ -8,10 +8,9 @@ namespace DnDHelperApp
 {
     internal class MagicSpell
     {
-        internal string SpellName { get; set; }
+        internal string SpellName { get; set; } // Название заклинания
         internal int ManaCost { get; set; } // Затраты маны
         internal int CastLimit { get; set; } // Порог каста
         internal StringBuilder Description { get; set; } // Описание
-
     }
 }
