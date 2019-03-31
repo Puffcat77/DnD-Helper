@@ -57,7 +57,7 @@ namespace DnDHelperApp
         static public int MaxHealth { get { return 50; } } // максимальное здоровье
 
         public int CurrentHealth { get; set; } // текущее здоровье
-
-        public string God { get; set; } // имя божества
+        
+        public int ArmorClass { get; set; }
     }
 }
