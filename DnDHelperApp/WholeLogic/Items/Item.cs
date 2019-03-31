@@ -8,7 +8,6 @@ namespace DnDHelperApp
 {
     public class Item
     {
-        public string Name { get; set; } // имя предмета
 
         public int Weight { get; set; } // его вес
 
@@ -21,6 +20,16 @@ namespace DnDHelperApp
         public int SalingCost { get; set; } // рыночная стоимость
 
         public int ActualCost { get; set; } // фактическая стоимость
+
+        public Item(int weight, int ammount, int charges, int chargeLimit, int salingCost, int actualCost)
+        {
+            Weight = weight;
+            Ammount = ammount;
+            Charges = charges;
+            ChargeLimit = chargeLimit;
+            SalingCost = salingCost;
+            ActualCost = actualCost;
+        }
 
         public void AddCharges(int chargeAmmount) // добавить заряды предмету
         {

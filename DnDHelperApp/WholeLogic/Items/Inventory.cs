@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp
 {
-    class Inventory
+    public class Inventory
     {
-        
+        Dictionary<string,Item> items = new Dictionary<string, Item>();
+
+        public void AddItem(string name, Item item)
+        {
+            items.Add(name, item);
+        }
     }
 }

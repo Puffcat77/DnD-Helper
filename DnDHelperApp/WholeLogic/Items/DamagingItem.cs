@@ -30,5 +30,6 @@ namespace DnDHelperApp
             }
             return sum;
         }
+
     }
 }

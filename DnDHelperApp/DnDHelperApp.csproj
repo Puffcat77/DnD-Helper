@@ -69,8 +69,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="WholeLogic\Currency.cs" />
-    <Compile Include="WholeLogic\Damage.cs" />
+    <Compile Include="WholeLogic\Creatures\Creature.cs" />
+    <Compile Include="WholeLogic\Creatures\Currency.cs" />
+    <Compile Include="WholeLogic\Creatures\Damage.cs" />
     <Compile Include="WholeLogic\Intefaces\IMagical.cs" />
     <Compile Include="WholeLogic\Items\DamagingItem.cs" />
     <Compile Include="WholeLogic\Items\HealingItem.cs" />
@@ -80,11 +81,11 @@
     <Compile Include="WholeLogic\Intefaces\IItemType.cs" />
     <Compile Include="WholeLogic\Items\Inventory.cs" />
     <Compile Include="WholeLogic\Items\MagicalItem.cs" />
-    <Compile Include="WholeLogic\Magic.cs" />
-    <Compile Include="WholeLogic\MagicSchool.cs" />
-    <Compile Include="WholeLogic\Skill.cs" />
-    <Compile Include="WholeLogic\Stat.cs" />
-    <Compile Include="WholeLogic\Stats.cs" />
+    <Compile Include="WholeLogic\Creatures\Magic.cs" />
+    <Compile Include="WholeLogic\Creatures\MagicSchool.cs" />
+    <Compile Include="WholeLogic\Creatures\Skill.cs" />
+    <Compile Include="WholeLogic\Creatures\Stat.cs" />
+    <Compile Include="WholeLogic\Creatures\Stats.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -93,7 +94,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WholeLogic\Character.cs" />
+    <Compile Include="WholeLogic\Creatures\Character.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
