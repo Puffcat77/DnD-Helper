@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp
 {
-    internal class Stat
+    public class Stat // характеристика персонажа
     {
-        internal int Value { get; set; } // уровень навыка
-        internal StringBuilder Description { get; set; } // описание навыка
-        internal int creationLimit = 10; // предел значения навыка при создании
+        public int Value { get; set; } // уровень навыка
+
+        public StringBuilder Description { get; set; } // описание навыка
+
+        public int CreationLimit { get { return 10; } } // предел значения навыка при создании
     }
 }

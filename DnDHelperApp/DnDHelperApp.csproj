@@ -71,12 +71,15 @@
     </ApplicationDefinition>
     <Compile Include="Currency.cs" />
     <Compile Include="Damage.cs" />
-    <Compile Include="DamagingItem.cs" />
-    <Compile Include="HealingItem.cs" />
-    <Compile Include="IItemType.cs" />
-    <Compile Include="Inventory.cs" />
-    <Compile Include="MagicalItem.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="Intefaces\IMagical.cs" />
+    <Compile Include="Items\DamagingItem.cs" />
+    <Compile Include="Items\HealingItem.cs" />
+    <Compile Include="Intefaces\IDamaging.cs" />
+    <Compile Include="Intefaces\IHealable.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Intefaces\IItemType.cs" />
+    <Compile Include="Items\Inventory.cs" />
+    <Compile Include="Items\MagicalItem.cs" />
     <Compile Include="Magic.cs" />
     <Compile Include="MagicSchool.cs" />
     <Compile Include="Skill.cs" />

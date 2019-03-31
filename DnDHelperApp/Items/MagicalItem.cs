@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp
 {
-    internal interface IItemType // Тип предмета (лечащий, наносящий урон или магический)
+    internal class MagicalItem:Item // магический предмет с каким-то эффектом
     {
-        void Use();
+        internal string Effect { get; set; }
+
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp
 {
-    internal class Currency
+    public class Currency
     {
-        internal int Gold { get; set; } // количество золота
-        internal int Silver { get; set; } // количество серебра
-        internal int Copper { get; set; } // количество меди
+        public int Gold { get; set; } // количество золота
+        public int Silver { get; set; } // количество серебра
+        public int Copper { get; set; } // количество меди
     }
 }

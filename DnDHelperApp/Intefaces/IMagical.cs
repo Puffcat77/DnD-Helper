@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DnDHelperApp
+namespace DnDHelperApp.Intefaces
 {
-    public class Damage
+    interface IMagical: IItemType
     {
-        public int DiceType { get; set; }
-        public int DiceAmmount { get; set; }
+        MagicSchool ItemSpell { get; set; }
+
     }
 }

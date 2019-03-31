@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp
 {
-    internal class DamagingItem:Item // предмет наносящий урон
+    public interface IItemType // Тип предмета (лечащий, наносящий урон или магический)
     {
-        Damage Damage { get; set; }
 
     }
 }

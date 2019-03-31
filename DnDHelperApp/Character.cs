@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp
 {
-    internal class Character:Stats
+    public class Character:Stats
     {
         Stats stats = new Stats(); // Характеристики персонажа
         Dictionary<string,Skill> skills = new Dictionary<string, Skill>(); // Список скиллов персонажа
         Dictionary<string, MagicSchool> spells = new Dictionary<string, MagicSchool>(); // список заклинаний персонажа
-        internal int Experience { get; set; }
+        public int Experience { get; set; }
         public Character(string name, string race, char sex, string characterClass,
             int age, int intelligence, int willpower, int reflexes, int physique, 
             int exterior, int charisma, int mobility, int luck, int magic)
@@ -31,7 +31,7 @@ namespace DnDHelperApp
             stats.Luck.Value = luck;
             stats.Magic.Value = magic;
         }
-        internal Currency Money { get; set; } // Количество имеющихся денег
+        public Currency Money { get; set; } // Количество имеющихся денег
         public void AddMoney(int gold, int silver, int copper) // Заработок персонажа
         {
             Money.Gold += gold;

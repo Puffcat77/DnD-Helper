@@ -6,58 +6,58 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp
 {
-    internal class Stats:Stat
+    public class Stats: Stat // характеристики персонажа
     {
-        internal StringBuilder Name { get; set; } // имя
+        public StringBuilder Name { get; set; } // имя
 
-        internal StringBuilder Race { get; set; } // раса
+        public StringBuilder Race { get; set; } // раса
 
-        internal StringBuilder Class { get; set; } // класс
+        public StringBuilder Class { get; set; } // класс
 
-        internal char Sex { get; set; } // пол
+        public char Sex { get; set; } // пол
 
-        internal int Age { get; set; } // возраст
+        public int Age { get; set; } // возраст
 
-        internal Stat Intelligence { get; set; } // интеллект
+        public Stat Intelligence { get; set; } // интеллект
 
-        internal Stat Willpower { get; set; } // сила воли
+        public Stat Willpower { get; set; } // сила воли
 
-        internal Stat Reflexes { get; set; } // рефлексы
+        public Stat Reflexes { get; set; } // рефлексы
 
-        internal Stat Physique { get; set; } // телосложение
+        public Stat Physique { get; set; } // телосложение
 
-        internal Stat Exterior { get; set; } // внешность
+        public Stat Exterior { get; set; } // внешность
 
-        internal Stat Charisma { get; set; } // харизма
+        public Stat Charisma { get; set; } // харизма
 
-        internal Stat Mobility { get; set; } // подвижность
+        public Stat Mobility { get; set; } // подвижность
 
-        internal Stat Luck { get; set; } // удача
+        public Stat Luck { get; set; } // удача
 
-        internal Stat Magic { get; set; } // магия
+        public Stat Magic { get; set; } // магия
 
-        internal int Sprint { get { return Mobility.Value * 3; } } // бег
+        public int Sprint { get { return Mobility.Value * 3; } } // бег
 
-        internal int Jump { get { return (int)Math.Floor((double)(Sprint / 4)); } } // прыжок
+        public int Jump { get { return (int)Math.Floor((double)(Sprint / 4)); } } // прыжок
 
-        internal int Throw { get { return Physique.Value * 3; } } // бросок
+        public int Throw { get { return Physique.Value * 3; } } // бросок
 
-        internal int Transfer { get { return Physique.Value * 5; } } // перенос
+        public int Transfer { get { return Physique.Value * 5; } } // перенос
 
-        internal int Lift { get { return Transfer * 4; } } // подъем
+        public int Lift { get { return Transfer * 4; } } // подъем
 
-        internal int MentalState { get { return Willpower.Value * 10; } } // психическое состояние
+        public int MentalState { get { return Willpower.Value * 10; } } // психическое состояние
 
-        internal int WearableWeight { get { return Physique.Value * 5; } } // переносимый вес
+        public int WearableWeight { get { return Physique.Value * 5; } } // переносимый вес
 
-        internal int CarryingWeight { get { return Physique.Value * 20; } } // поднимаемый вес
+        public int CarryingWeight { get { return Physique.Value * 20; } } // поднимаемый вес
 
-        internal int Level { get; set; } // уровень
+        public int Level { get; set; } // уровень
 
-        static internal int MaxHealth { get { return 50; } } // максимальное здоровье
+        static public int MaxHealth { get { return 50; } } // максимальное здоровье
 
-        internal int CurrentHealth { get; set; } // текущее здоровье
+        public int CurrentHealth { get; set; } // текущее здоровье
 
-        internal string God { get; set; } // имя божества
+        public string God { get; set; } // имя божества
     }
 }

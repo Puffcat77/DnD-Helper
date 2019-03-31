@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp
 {
-    internal class HealingItem : Item // лечащий предмет
+    internal class HealingItem : Item, IHealable // лечащий предмет
     {
-        internal int HealPoints { get; set; } // количество восстанавливаемых очков
-        internal int HealingTime { get; set; } // время восстановления
+        public int HealPoints { get; set; }
+        public int HealingTime { get; set; }
 
         public HealingItem(string name, int itemWeight, int charges, int chargeLimit, int healPoints, int healingTime) 
         {
@@ -30,11 +30,6 @@ namespace DnDHelperApp
             }
             else
             { return 0; }
-        }
-
-        public void AddCharges(int chargeAmmount) // добавить заряды предмету
-        {
-            Charges = (Charges + chargeAmmount) % (ChargeLimit + 1);
         }
     }
 }

@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp
 {
-    internal class MagicSpell
+    public class MagicSpell
     {
-        internal string SpellName { get; set; } // Название заклинания
-        internal int ManaCost { get; set; } // Затраты маны
-        internal int CastLimit { get; set; } // Порог каста
-        internal StringBuilder Description { get; set; } // Описание
+        public string SpellName { get; set; } // Название заклинания
+
+        public int ManaCost { get; set; } // Затраты маны
+
+        public int CastLimit { get; set; } // Порог каста
+
+        public StringBuilder Description { get; set; } // Описание
+
     }
 }
