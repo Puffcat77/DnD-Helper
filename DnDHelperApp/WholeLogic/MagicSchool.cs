@@ -8,15 +8,15 @@ namespace DnDHelperApp
 {
     class MagicSchool:MagicSpell
     {
-        internal int SchoolLevel { get; set; } // Уровень школы магии
-        internal List<MagicSpell> Spells { get; set; } // Заклинания этой школы
+        internal int SchoolLevel { get; set; } // уровень школы магии
+        internal List<MagicSpell> Spells { get; set; } // заклинания этой школы
 
-        public MagicSchool(MagicSpell spell)
+        public MagicSchool(MagicSpell spell) // изучение новой школы с одним заклинанием
         {
             LearnNewMagic(spell);
         }
 
-        public MagicSchool(MagicSpell[] spells)
+        public MagicSchool(MagicSpell[] spells) // изучение новой школы с несколькими зклинаниями
         {
             foreach (var spell in spells)
             {
@@ -33,5 +33,6 @@ namespace DnDHelperApp
         {
             SchoolLevel++;
         }
+
     }
 }

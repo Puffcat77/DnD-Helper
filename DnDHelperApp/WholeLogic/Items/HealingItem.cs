@@ -21,7 +21,7 @@ namespace DnDHelperApp
             HealingTime = healingTime;
         }
 
-        public int Heal() // использовать предмет
+        public int Heal()
         {
             if (Charges > 0)
             {

@@ -8,7 +8,9 @@ namespace DnDHelperApp.Intefaces
 {
     interface IMagical: IItemType
     {
-        MagicSchool ItemSpell { get; set; }
+        string Spell { get; set; }
+
+        int SpellValue { get; set; }
 
     }
 }

@@ -69,22 +69,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Currency.cs" />
-    <Compile Include="Damage.cs" />
-    <Compile Include="Intefaces\IMagical.cs" />
-    <Compile Include="Items\DamagingItem.cs" />
-    <Compile Include="Items\HealingItem.cs" />
-    <Compile Include="Intefaces\IDamaging.cs" />
-    <Compile Include="Intefaces\IHealable.cs" />
-    <Compile Include="Items\Item.cs" />
-    <Compile Include="Intefaces\IItemType.cs" />
-    <Compile Include="Items\Inventory.cs" />
-    <Compile Include="Items\MagicalItem.cs" />
-    <Compile Include="Magic.cs" />
-    <Compile Include="MagicSchool.cs" />
-    <Compile Include="Skill.cs" />
-    <Compile Include="Stat.cs" />
-    <Compile Include="Stats.cs" />
+    <Compile Include="WholeLogic\Currency.cs" />
+    <Compile Include="WholeLogic\Damage.cs" />
+    <Compile Include="WholeLogic\Intefaces\IMagical.cs" />
+    <Compile Include="WholeLogic\Items\DamagingItem.cs" />
+    <Compile Include="WholeLogic\Items\HealingItem.cs" />
+    <Compile Include="WholeLogic\Intefaces\IDamaging.cs" />
+    <Compile Include="WholeLogic\Intefaces\IHealable.cs" />
+    <Compile Include="WholeLogic\Items\Item.cs" />
+    <Compile Include="WholeLogic\Intefaces\IItemType.cs" />
+    <Compile Include="WholeLogic\Items\Inventory.cs" />
+    <Compile Include="WholeLogic\Items\MagicalItem.cs" />
+    <Compile Include="WholeLogic\Magic.cs" />
+    <Compile Include="WholeLogic\MagicSchool.cs" />
+    <Compile Include="WholeLogic\Skill.cs" />
+    <Compile Include="WholeLogic\Stat.cs" />
+    <Compile Include="WholeLogic\Stats.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -93,7 +93,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Character.cs" />
+    <Compile Include="WholeLogic\Character.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

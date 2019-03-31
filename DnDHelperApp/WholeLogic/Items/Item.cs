@@ -32,9 +32,9 @@ namespace DnDHelperApp
             Charges = ChargeLimit;
         }
 
-        public void IncreaceCharges(int additionalCharges) // увеличить максимум зарядов
+        public void IncreaceChargeLimit(int additionalCharges) // увеличить максимум зарядов
         {
-            ChargeLimit++;
+            ChargeLimit+=additionalCharges;
         }
     }
 }
