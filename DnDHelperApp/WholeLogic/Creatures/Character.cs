@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp
 {
-    public class Character:Stats
+    public class Character:CreatureStats
     {
-        Stats stats = new Stats(); // Характеристики персонажа
+        CreatureStats stats = new CreatureStats(); // Характеристики персонажа
         Dictionary<string,Skill> skills = new Dictionary<string, Skill>(); // Список скиллов персонажа
         Dictionary<string, MagicSchool> spells = new Dictionary<string, MagicSchool>(); // список заклинаний персонажа
         public int Experience { get; set; }
