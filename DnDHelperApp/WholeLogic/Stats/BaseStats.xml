@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<stats>
+  <stat>
+    <name>Intelligence</name>
+    <value>0</value>
+    <creationLimit>10</creationLimit>
+    <haveCreationLimit>true</haveCreationLimit>>
+    <description>Показатель "соображалки" персонажа. Как хорошо персонаж умеет решать проблемы, замечать какие-то особенности, запоминать информацию.</description>
+  </stat>
+  <name>Willpower</name>
+  <value>0</value>
+  <creationLimit>10</creationLimit>
+  <haveCreationLimit>true</haveCreationLimit>>
+  <description>Отмечает, насколько персонаж хорошо сопротивляется боли, стрессу, пыткам, в том числе прямому ментальному вторжению и давлению, насколько он способен продолжать сражаться, после получения ран, вообще силу воли и собранность. Персонажи с характером могут и надавить на кого-либо, поэтому частично влияет на взаимодействие с другими людьми. Важна так же и для магов.</description>
+  <stat>
+    <name>Reflexes</name>
+    <value>0</value>
+    <creationLimit>10</creationLimit>
+    <haveCreationLimit>true</haveCreationLimit>>
+    <description>Данный параметр отображает не только сферическую "ловкость", но и координацию персонажа в целом. Требуется для боевых навыков, атлетики и акробатики, всадников. Важнейшая "боевая" характеристика.</description>
+  </stat>
+  <stat>
+    <name>Physique</name>
+    <value>0</value>
+    <creationLimit>10</creationLimit>
+    <haveCreationLimit>true</haveCreationLimit>>
+    <description>Характеристика, представляющая собой одновременно силу и выносливость персонажей. Характеристика истинных Рэмбаков. Показатель выносливости определяет тип телосложения. Чем выше, тем более сильные удары персонаж может наносить и переносить. Один и тот же урон может быть серьезной травмой для слабого, и легким ранением - для сильного.</description>
+  </stat>
+  <stat>
+    <name>Exterior</name>
+    <value>0</value>
+    <creationLimit>10</creationLimit>
+    <haveCreationLimit>true</haveCreationLimit>>
+    <description>Параметр, отвечающий за внешний вид вашего персонажа. То, насколько хорошо и привлекательно он выглядит в глазах других.</description>
+  </stat>
+  <stat>
+    <name>Charisma</name>
+    <value>0</value>
+    <creationLimit>10</creationLimit>
+    <haveCreationLimit>true</haveCreationLimit>>
+    <description>Харизма - это основной "социальный" параметр. Если вкратце, отвечает за способности персонажа в области общения и понимания других людей.</description>
+  </stat>
+  <stat>
+    <name>Mobility</name>
+    <value>0</value>
+    <creationLimit>10</creationLimit>
+    <haveCreationLimit>true</haveCreationLimit>>
+    <description>Определяет скорость перемещения персонажа в бою и дальность прыжков.</description>
+  </stat>
+  <stat>
+    <name>Luck</name>
+    <value>0</value>
+    <creationLimit>10</creationLimit>
+    <haveCreationLimit>true</haveCreationLimit>>
+    <description>Ну, это ваша удача. Кэп, снова с вами.Данную характеристику можно использовать как добавочные очки к броску кубика. И да – она расходуется и восполняется.</description>
+  </stat>
+  <stat>
+    <name>Magic</name>
+    <value>0</value>
+    <creationLimit>10</creationLimit>
+    <haveCreationLimit>true</haveCreationLimit>>
+    <description>Духовная сила персонажа, его предрасположенность к магии и магический потенциал. Есть почти у всех живых существ. В "голом" виде не дает ничего - для реализации потенциала нужны навыки, обучение (см. раздел "магическая система"); при высоких значениях и в особых обстоятельствах персонаж может неосознанно сделать некое колдунство.</description>
+  </stat>
+  <stat>
+    <name>MaxHealth</name>
+    <value>50</value>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>>
+    <description>Максимальное здоровье персонажа</description>
+  </stat>
+  <stat>
+    <name>CurrentHeakth</name>
+    <value>50</value>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>>
+    <description>Текущее здоровье вашего персонажа</description>
+  </stat>
+  <stat>
+    <name>ArmorClass</name>
+    <value>0</value>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>>
+    <description>Класс брони вашего персонажа</description>
+  </stat>
+</stats>

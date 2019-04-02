@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<stats>
+  <stat>
+    <name>Sprint</name>
+    <influencingStat>Mobility</influencingStat>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>
+    <description>Показатель за скорость бега вашего персонажа.</description>
+    <coefficient>3</coefficient>
+  </stat>
+  <stat>
+    <name>Jump</name>
+    <influencingStat>Mobility</influencingStat>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>
+    <description>Показатель высоты прыжка вашего персонажа.</description>
+    <coefficient>0.25</coefficient>
+  </stat>
+  <stat>
+    <name>Throw</name>
+    <influencingStat>Phisique</influencingStat>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>
+    <description>Показатель, отвечающий за дальность полета бросков вашего персонажа</description>
+    <coefficient>3</coefficient>
+  </stat>
+  <stat>
+    <name>Transfer</name>
+    <influencingStat>Physique</influencingStat>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>
+    <description>Показатель того, как много ваш персонаж может переносить кг.</description>
+    <coefficient>5</coefficient>
+  </stat>
+  <stat>
+    <name>Lift</name>
+    <influencingStat>Transfer</influencingStat>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>
+    <description>Показатель того, сколько килограм сможет поднять ваш персонаж.</description>
+    <coefficient>3</coefficient>
+  </stat>
+  <stat>
+    <name>MentalState</name>
+    <influencingStat>Willpower</influencingStat>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>
+    <description>Он может уменьшиться или восстановиться. Однако, оно восстанавливается только в пределах каждой десятки. Таким образом, если у вас СВ 7, и по каким-то причинам вы потеряли 10 единиц ПС, то СВ тоже падает на единицу.</description>
+    <coefficient>10</coefficient>
+  </stat>
+  <stat>
+    <name>WearableWeight</name>
+    <influencingStat>Physique</influencingStat>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>
+    <description>Показатель максимально переносимого веса аммуниции персонажем.</description>
+    <coefficient>5</coefficient>
+  </stat>
+  <stat>
+    <name>CarryingWeight</name>
+    <influencingStat>Physique</influencingStat>
+    <creationLimit>0</creationLimit>
+    <haveCreationLimit>false</haveCreationLimit>
+    <description>Максимальный вес всего снаряжения, который может нести с собой персонаж.</description>
+    <coefficient>20</coefficient>
+  </stat>
+</stats>

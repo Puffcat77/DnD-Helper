@@ -142,5 +142,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WholeLogic\Stats\BaseStats.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WholeLogic\Stats\DerivedStats.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
