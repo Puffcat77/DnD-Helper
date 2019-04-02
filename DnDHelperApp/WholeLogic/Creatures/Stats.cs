@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DnDHelperApp
+namespace DnDHelperApp.WholeLogic
 {
     public class Stats: Stat // характеристики персонажа
     {
+        // BaseInfo
+        #region
         public StringBuilder Name { get; set; } // имя
 
         public StringBuilder Race { get; set; } // раса
@@ -18,6 +20,9 @@ namespace DnDHelperApp
 
         public int Age { get; set; } // возраст
 
+        #endregion
+        //DerivedStats
+        #region
         public Stat Intelligence { get; set; } // интеллект
 
         public Stat Willpower { get; set; } // сила воли
@@ -51,7 +56,7 @@ namespace DnDHelperApp
         public int WearableWeight { get { return Physique.Value * 5; } } // переносимый вес
 
         public int CarryingWeight { get { return Physique.Value * 20; } } // поднимаемый вес
-
+        #endregion
         public int Level { get; set; } // уровень
 
         static public int MaxHealth { get { return 50; } } // максимальное здоровье

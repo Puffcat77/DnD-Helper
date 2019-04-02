@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DnDHelperApp.WholeLogic
 {
-    class CharacterStats
+    class CharacterStats: CreatureStats
     {
         public string God { get; set; } // имя божества
+
+
     }
 }

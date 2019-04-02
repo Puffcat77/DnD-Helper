@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DnDHelperApp.WholeLogic
+namespace DnDHelperApp.WholeLogic.Work_with_data
 {
-    public class Creature
+    class StatBase
     {
-        CreatureStats stats;
-
-
     }
 }

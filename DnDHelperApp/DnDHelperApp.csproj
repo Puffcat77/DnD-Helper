@@ -69,15 +69,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="WholeLogic\Stats\BaseStats.cs" />
-    <Compile Include="WholeLogic\Creatures\CreatureInfo.cs" />
-    <Compile Include="WholeLogic\Stats\DerivedStats.cs" />
+    <Compile Include="WholeLogic\Stats\CreatureInfo.cs" />
     <Compile Include="WholeLogic\Intefaces\IStat.cs" />
     <Compile Include="WholeLogic\Stats\CharacterStats.cs" />
     <Compile Include="WholeLogic\Creatures\Creature.cs" />
     <Compile Include="WholeLogic\Creatures\Currency.cs" />
     <Compile Include="WholeLogic\Creatures\Damage.cs" />
-    <Compile Include="WholeLogic\Stats\DerivedStat.cs" />
     <Compile Include="WholeLogic\Intefaces\IMagical.cs" />
     <Compile Include="WholeLogic\Items\DamagingItem.cs" />
     <Compile Include="WholeLogic\Items\HealingItem.cs" />
@@ -92,6 +89,7 @@
     <Compile Include="WholeLogic\Creatures\Skill.cs" />
     <Compile Include="WholeLogic\Stats\Stat.cs" />
     <Compile Include="WholeLogic\Stats\CreatureStats.cs" />
+    <Compile Include="WholeLogic\Work with data\StatBase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -4,33 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DnDHelperApp
+namespace DnDHelperApp.WholeLogic
 {
-    public class Character:CreatureStats
+    public class Character:Creature
     {
-        CreatureStats stats = new CreatureStats(); // Характеристики персонажа
+        CharacterStats stats; // Характеристики персонажа
         Dictionary<string,Skill> skills = new Dictionary<string, Skill>(); // Список скиллов персонажа
         Dictionary<string, MagicSchool> spells = new Dictionary<string, MagicSchool>(); // список заклинаний персонажа
         public int Experience { get; set; }
-        public Character(string name, string race, char sex, string characterClass,
-            int age, int intelligence, int willpower, int reflexes, int physique, 
-            int exterior, int charisma, int mobility, int luck, int magic)
-        {
-            stats.Name = new StringBuilder(name);
-            stats.Race = new StringBuilder(race);
-            stats.Sex = sex;
-            stats.Class = new StringBuilder(characterClass);
-            stats.Age = age;
-            stats.Intelligence.Value = intelligence;
-            stats.Willpower.Value = willpower;
-            stats.Reflexes.Value = reflexes;
-            stats.Physique.Value = physique;
-            stats.Exterior.Value = exterior;
-            stats.Charisma.Value = charisma;
-            stats.Mobility.Value = mobility;
-            stats.Luck.Value = luck;
-            stats.Magic.Value = magic;
-        }
+
         public Currency Money { get; set; } // Количество имеющихся денег
         public void AddMoney(int gold, int silver, int copper) // Заработок персонажа
         {
@@ -77,7 +59,7 @@ namespace DnDHelperApp
             spells[schoolName].UpgradeSchool();
         }
 
-        //public void Heal(Item item)
+        //public void Heal(HealingItem item)
         //{
         //    CurrentHealth = (CurrentHealth + item.HealPoinnts) % MaxHealth;
         //}
