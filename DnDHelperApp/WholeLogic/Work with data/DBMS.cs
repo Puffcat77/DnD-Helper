@@ -12,12 +12,13 @@ namespace DnDHelperApp.WholeLogic.Work_with_data
     // Database Managment System
     public class DBMS<T>
     {
-        Dictionary<string, T> database = new Dictionary<string, T>();
-        XmlSerializer formatter = new XmlSerializer(typeof(Dictionary<string, T>));
-        private string databasePath = $@"Database\{typeof(T).Name}.xml";
+        private Dictionary<string, T> database = new Dictionary<string, T>();
+        private XmlSerializer formatter = new XmlSerializer(typeof(Dictionary<string, T>));
+        private string databasePath = string.Empty;
 
-        public DBMS()
+        public DBMS(string databasePath)
         {
+            this.databasePath = $@"{databasePath}\{typeof(T).Name}s.xml";
             if (!File.Exists(databasePath))
             {
                 SaveData();
