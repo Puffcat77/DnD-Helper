@@ -89,6 +89,7 @@
     <Compile Include="WholeLogic\Creatures\Skill.cs" />
     <Compile Include="WholeLogic\Stats\Stat.cs" />
     <Compile Include="WholeLogic\Stats\CreatureStats.cs" />
+    <Compile Include="WholeLogic\Work with data\DBMS.cs" />
     <Compile Include="WholeLogic\Work with data\StatBase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -147,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="WholeLogic\Stats\DerivedStats.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WholeLogic\Database\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
