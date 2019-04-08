@@ -10,11 +10,11 @@ using System.Xml.Serialization;
 namespace DnDHelperApp.WholeLogic.Work_with_data
 {
     // Database Managment System
-    public class DBMS<T> where T:IComparable<T>, IEnumerable<T>
+    public class DBMS<T>
     {
         Dictionary<string, T> database = new Dictionary<string, T>();
         XmlSerializer formatter = new XmlSerializer(typeof(Dictionary<string, T>));
-        private string databasePath = $@"Database\{typeof(T)}.xml";
+        private string databasePath = $@"Database\{typeof(T).Name}.xml";
 
         public DBMS()
         {
@@ -35,9 +35,9 @@ namespace DnDHelperApp.WholeLogic.Work_with_data
             database.Remove(dataName);
         }
 
-        public T GetData(string dataName)
+        public Dictionary<string,T> GetData()
         {
-            return database[dataName];
+            return database;
         }
 
         public void SaveData()
