@@ -69,6 +69,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="WholeLogic\Creatures\Alchemy.cs" />
     <Compile Include="WholeLogic\Stats\CreatureInfo.cs" />
     <Compile Include="WholeLogic\Intefaces\IStat.cs" />
     <Compile Include="WholeLogic\Stats\CharacterStats.cs" />
@@ -80,17 +81,19 @@
     <Compile Include="WholeLogic\Items\HealingItem.cs" />
     <Compile Include="WholeLogic\Intefaces\IDamaging.cs" />
     <Compile Include="WholeLogic\Intefaces\IHealable.cs" />
-    <Compile Include="WholeLogic\Items\Item.cs" />
+    <Compile Include="WholeLogic\GameBase\Item.cs" />
     <Compile Include="WholeLogic\Intefaces\IItemType.cs" />
     <Compile Include="WholeLogic\Items\Inventory.cs" />
     <Compile Include="WholeLogic\Items\MagicalItem.cs" />
-    <Compile Include="WholeLogic\Creatures\Magic.cs" />
-    <Compile Include="WholeLogic\Creatures\MagicSchool.cs" />
-    <Compile Include="WholeLogic\Creatures\Skill.cs" />
-    <Compile Include="WholeLogic\Stats\Stat.cs" />
+    <Compile Include="WholeLogic\GameBase\MagicSpell.cs" />
+    <Compile Include="WholeLogic\GameBase\MagicSchool.cs" />
+    <Compile Include="WholeLogic\GameBase\Skill.cs" />
+    <Compile Include="WholeLogic\GameBase\Stat.cs" />
     <Compile Include="WholeLogic\Stats\CreatureStats.cs" />
     <Compile Include="WholeLogic\Work with data\DBMS.cs" />
+    <Compile Include="WholeLogic\Work with data\DBMSUser.cs" />
     <Compile Include="WholeLogic\Work with data\StatBase.cs" />
+    <Compile Include="WholeLogic\Work with data\User.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

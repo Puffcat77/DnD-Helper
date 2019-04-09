@@ -9,16 +9,22 @@ using System.Xml.Serialization;
 
 namespace DnDHelperApp.WholeLogic.Work_with_data
 {
-    // Database Managment System
-    public class DBMS<T>
+    public class DBMS
     {
-        private Dictionary<string, T> database = new Dictionary<string, T>();
-        private XmlSerializer formatter = new XmlSerializer(typeof(Dictionary<string, T>));
+
+    }
+    // Database Managment System
+    public class DBMS<DataType>: DBMS
+    {
+        private Dictionary<string, DataType> database = new Dictionary<string, DataType>();
+
+        private XmlSerializer formatter = new XmlSerializer(typeof(Dictionary<string, DataType>));
+
         private string databasePath = string.Empty;
 
         public DBMS(string databasePath)
         {
-            this.databasePath = $@"{databasePath}\{typeof(T).Name}s.xml";
+            this.databasePath = $@"{databasePath}\{typeof(DataType).Name}s.xml";
             if (!File.Exists(databasePath))
             {
                 SaveData();
@@ -26,7 +32,7 @@ namespace DnDHelperApp.WholeLogic.Work_with_data
             LoadData();
         }
 
-        public void AddNewData(string dataName, T dataValue)
+        public void AddNewData(string dataName, DataType dataValue)
         {
             database.Add(dataName, dataValue);
         }
@@ -36,7 +42,7 @@ namespace DnDHelperApp.WholeLogic.Work_with_data
             database.Remove(dataName);
         }
 
-        public Dictionary<string,T> GetData()
+        public Dictionary<string, DataType> GetAllData()
         {
             return database;
         }
@@ -54,7 +60,7 @@ namespace DnDHelperApp.WholeLogic.Work_with_data
         {
             using (var xmlReader = XmlReader.Create(databasePath))
             {
-                Dictionary<string, T> database = (Dictionary<string, T>)formatter.Deserialize(xmlReader);
+                Dictionary<string, DataType> database = (Dictionary<string, DataType>)formatter.Deserialize(xmlReader);
                 xmlReader.Close();
             }
         }
@@ -69,7 +75,7 @@ namespace DnDHelperApp.WholeLogic.Work_with_data
         }
 
 
-        public void ChangeUserData(string dataName,T newData)
+        public void ChangeData(string dataName, DataType newData)
         {
             database[dataName] = newData;
         }
