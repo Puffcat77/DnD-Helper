@@ -26,19 +26,10 @@ namespace DnDHelperApp.WholeLogic.Work_with_data
             Databases.Add("Items", new DBMS<Item>(DataPath));
             Databases.Add("Bestiary", new DBMS<Skill>(DataPath));
             Databases.Add("Alchemy", new DBMS<Alchemy>(DataPath));
+            if (UserType == "Player")
+            {
+                DataPath = $@"Database\{UserName}";
+            }
         }
-
-        //public void AddNewDataBase()
-        //{
-        //    if (UserType == "master")
-        //    {
-
-        //    }
-        //    else
-        //    {
-        //        DataPath = $@"Database\{UserName}";
-        //    }
-        //}
-        
     }
 }
